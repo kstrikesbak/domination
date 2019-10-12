@@ -34,21 +34,27 @@ removeTheLastLi()
 // takesInNodeElementAndAppendsIt('TEST');
 
 
-// function takesInNodeElementAndAppendsIt(myImage) {
-//     const newUl = document.querySelector('#arguments');
-//     const newLi = document.createElement('img');
-//     newLi.appendChild(document.createElement(myImage))
-//     newUl.appendChild(newLi);
-// }
-// myImage.setAttribute("src", "https://ak9.picdn.net/shutterstock/videos/32738299/thumb/1.jpg");
-// takesInNodeElementAndAppendsIt(myImage);
+function takesInNodeElementAndAppendsIt(myImage) {
+    const newUl = document.querySelector('#arguments');
+    const newLi = document.createElement('img');
+    newLi.appendChild(document.createElement(myImage))
+    newUl.appendChild(newLi);
+}
+myImage.setAttribute("src", "https://ak9.picdn.net/shutterstock/videos/32738299/thumb/1.jpg");
+takesInNodeElementAndAppendsIt(myImage);
 
-// function takeInImageAndMakesIt30Pixels(img) {
-//     const changeHeight = document.createElement(img);
-//     changeHeight.style.height = '30px';
-// }
-// const monkeyURL = "http://cdn01.cdn.justjaredjr.com/wp-content/uploads/headlines/2015/04/monkey-king-clip.jpg"
-// takeInImageAndMakesIt30Pixels(monkeyURL);
+
+
+
+function takeInImageAndMakesIt30Pixels(img) {
+    const changeHeight = document.createElement(img);
+    changeHeight.style.height = '30px';
+}
+const monkeyURL = "http://cdn01.cdn.justjaredjr.com/wp-content/uploads/headlines/2015/04/monkey-king-clip.jpg"
+takeInImageAndMakesIt30Pixels(monkeyURL);
+
+
+
 
 function makesElementDisappear (element) {
     const cloak = document.querySelector(element);
@@ -57,7 +63,11 @@ function makesElementDisappear (element) {
 
 makesElementDisappear(h1);
 
+
+
+
 function setsTheThingWithThatIdToHaveThatSizeForText (size,id) {
     const AdjustId = document.querySelector(id);
-    
+    // no idea
+
 }
