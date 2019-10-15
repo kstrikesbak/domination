@@ -51,6 +51,7 @@ function takesInNodeElementAndAppendsIt(element){
 
 const monkeyImage = document.createElement('img');
 monkeyImage.src = 'https://i.pinimg.com/originals/6e/9d/4e/6e9d4e344d4c9819f63ac2d817215989.jpg'
+monkeyImage.style.height ='90px'
 takesInNodeElementAndAppendsIt(monkeyImage);
 
 
@@ -101,6 +102,7 @@ function setsTheThingWithThatIdToHaveThatSizeForText(fontSize, id){
 
 
 setsTheThingWithThatIdToHaveThatSizeForText('50px', '#heading')
+setsTheThingWithThatIdToHaveThatSizeForText('30px', '#thing-c')
 
 function addingNewLi(str){
     const addLi = document.createElement('li');
