@@ -63,6 +63,13 @@ takesInNodeElementAndAppendsIt(monkeyImage);
 // const monkeyURL = "http://cdn01.cdn.justjaredjr.com/wp-content/uploads/headlines/2015/04/monkey-king-clip.jpg"
 // takeInImageAndMakesIt30Pixels(monkeyURL);
 
+function takeInImageAndMakesIt30Pixels(image){
+    image.style.height = '30px'
+}
+
+const resizedImage = document.querySelector('img')
+takeInImageAndMakesIt30Pixels(resizedImage);
+
 
 
 
@@ -73,7 +80,12 @@ takesInNodeElementAndAppendsIt(monkeyImage);
 
 // makesElementDisappear(h1);
 
+function makesElementDisappear(element){
+    const disappearingAct = document.querySelector(element);
+    disappearingAct.className = 'invisible'
 
+}
+makesElementDisappear('h1');
 
 
 // function setsTheThingWithThatIdToHaveThatSizeForText (size,id) {
@@ -81,3 +93,29 @@ takesInNodeElementAndAppendsIt(monkeyImage);
 //     // no idea
 
 // }
+
+function setsTheThingWithThatIdToHaveThatSizeForText(fontSize, id){
+    const element = document.querySelector(id)
+    element.style.fontSize = fontSize;
+}
+
+
+setsTheThingWithThatIdToHaveThatSizeForText('50px', '#heading')
+
+function addingNewLi(str){
+    const addLi = document.createElement('li');
+    addLi.innerText = str
+    return addLi;
+}
+
+const addLi = addingNewLi('TEST');
+takesInNodeElementAndAppendsIt(addLi);
+
+function creatingNewHeader(headerSize,someText){
+    const newHeader = document.createElement('h' + headerSize);
+    newHeader.innerHTML = someText;
+    return newHeader;
+}
+const appendingNewHeader= creatingNewHeader('1', 'I love cheese');
+takesInNodeElementAndAppendsIt(appendingNewHeader);
+
