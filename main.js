@@ -50,7 +50,7 @@ function takesInNodeElementAndAppendsIt(element){
 
 
 const monkeyImage = document.createElement('img');
-monkeyImage.src = 'https://wallpaperplay.com/walls/full/3/4/3/306905.jpg'
+monkeyImage.src = 'https://i.pinimg.com/originals/6e/9d/4e/6e9d4e344d4c9819f63ac2d817215989.jpg'
 takesInNodeElementAndAppendsIt(monkeyImage);
 
 
