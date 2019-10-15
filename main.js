@@ -33,41 +33,51 @@ removeTheLastLi()
 
 // takesInNodeElementAndAppendsIt('TEST');
 
+// did not work at all
+// function takesInNodeElementAndAppendsIt(myImage) {
+//     const newUl = document.querySelector('#arguments');
+//     const newLi = document.createElement('img');
+//     newLi.appendChild(document.createElement(myImage))
+//     newUl.appendChild(newLi);
+// }
+// myImage.setAttribute("src", "https://ak9.picdn.net/shutterstock/videos/32738299/thumb/1.jpg");
+// takesInNodeElementAndAppendsIt(myImage);
 
-function takesInNodeElementAndAppendsIt(myImage) {
-    const newUl = document.querySelector('#arguments');
-    const newLi = document.createElement('img');
-    newLi.appendChild(document.createElement(myImage))
-    newUl.appendChild(newLi);
-}
-myImage.setAttribute("src", "https://ak9.picdn.net/shutterstock/videos/32738299/thumb/1.jpg");
-takesInNodeElementAndAppendsIt(myImage);
-
-
-
-
-function takeInImageAndMakesIt30Pixels(img) {
-    const changeHeight = document.createElement(img);
-    changeHeight.style.height = '30px';
-}
-const monkeyURL = "http://cdn01.cdn.justjaredjr.com/wp-content/uploads/headlines/2015/04/monkey-king-clip.jpg"
-takeInImageAndMakesIt30Pixels(monkeyURL);
-
-
-
-
-function makesElementDisappear (element) {
-    const cloak = document.querySelector(element);
-    cloak.style.visibility = 'invisible';
+function takesInNodeElementAndAppendsIt(element){
+    const toBeAppended = document.querySelector('ul');
+    toBeAppended.appendChild(element);
 }
 
-makesElementDisappear(h1);
+
+const monkeyImage = document.createElement('img');
+monkeyImage.src = 'https://wallpaperplay.com/walls/full/3/4/3/306905.jpg'
+takesInNodeElementAndAppendsIt(monkeyImage);
 
 
 
 
-function setsTheThingWithThatIdToHaveThatSizeForText (size,id) {
-    const AdjustId = document.querySelector(id);
-    // no idea
+// function takeInImageAndMakesIt30Pixels(img) {
+//     const changeHeight = document.createElement(img);
+//     changeHeight.style.height = '30px';
+// }
+// const monkeyURL = "http://cdn01.cdn.justjaredjr.com/wp-content/uploads/headlines/2015/04/monkey-king-clip.jpg"
+// takeInImageAndMakesIt30Pixels(monkeyURL);
 
-}
+
+
+
+// function makesElementDisappear (element) {
+//     const cloak = document.querySelector(element);
+//     cloak.style.visibility = 'invisible';
+// }
+
+// makesElementDisappear(h1);
+
+
+
+
+// function setsTheThingWithThatIdToHaveThatSizeForText (size,id) {
+//     const AdjustId = document.querySelector(id);
+//     // no idea
+
+// }
